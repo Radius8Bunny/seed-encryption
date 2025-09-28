@@ -42,12 +42,8 @@ def resolve(u_p):
     r = sum(u_p)
     return r
 
-seed = 7
-n = 2
+seed = 13 # always odd
+n = 8    # always even
 pairs = get_pairs(seed, n)
-# print(pairs)
-# print("\n")
 unp = unpack(pairs)
-# print(unp)
-# print("\n")
 print(resolve(unp))
